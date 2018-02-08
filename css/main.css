@@ -1,0 +1,158 @@
+body {
+	font-family: 'Roboto Slab', serif;
+}
+
+.container {
+}
+
+#top {
+	height:150px;
+}
+
+nav {
+	background-color: #100174;
+	display: inline;
+	height: auto; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0;
+	left: 0;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	margin-top: 20px;
+	border-radius: 0px 15px 15px 0px;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+nav a {
+	padding-top: 10px;
+	color:white;
+	display: block;
+}
+
+.navItems a:hover {
+	text-decoration: underline;
+}
+
+
+nav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 20px;
+	margin-left: 50px;
+	font-family: helvetica, sans-serif;
+}
+
+.hamburger {
+	margin-left: 15px;
+	position: fixed;
+	top:15px;
+	font-size:40px;
+	cursor:pointer;
+}
+
+.jumbotron {
+	height:800px;
+}
+
+.flex-container-centered {
+	display: flex;
+	justify-content: center;
+}
+
+.button-container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	height: 500px;
+}
+
+.button {
+	height: 45px;
+	width: 120px;
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.button-1 {
+	margin-right: 10%;
+	color: black;
+}
+
+.button-2 {
+	background-color: #e71313;
+	color: #f9f9f9;;
+}
+
+#custom {
+	background-color: #00006be6;
+}
+
+#wordpress {
+	background-color: #002b75cc;
+}
+
+.copy {
+	margin: 0 10%;
+}
+
+.copy li {
+	margin: 18px 0;
+}
+
+.refs li{
+	list-style: none;
+}
+.form {
+	background-color: lightgray;
+	padding: 20px 0;
+	margin-top: 20px;
+}
+
+.contact-box {
+	width: 80%;
+}
+
+
+
+input {
+	width: 100%;
+	margin-top: 20px;
+}
+
+input:focus {
+	border: 2px solid #999999;
+}
+
+input:hover {
+	border: 2px solid #999999;
+}
+
+@media screen and (max-width: 420px) {
+	.hamburger {
+		font-size: 25px;
+	}
+
+	nav a {
+		font-size: .85rem;
+	}
+
+	.button-container {
+		height: auto;
+		justify-content: center;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+}
