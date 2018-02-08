@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto Slab', serif;
+	transition: background-color .7s ease;
 }
 
 .container {
@@ -94,12 +95,20 @@ nav .closebtn {
 	color: #f9f9f9;;
 }
 
-#custom {
+.color-dark-blue {
 	background-color: #00006be6;
 }
 
-#wordpress {
+.color-dark-green {
 	background-color: #002b75cc;
+}
+
+.color-dark-grey {
+	background-color: #777;
+}
+
+.color-cream {
+	background-color: #FCFBE3;
 }
 
 .copy {
@@ -110,10 +119,15 @@ nav .closebtn {
 	margin: 18px 0;
 }
 
+#references {
+	color:white;
+}
+
 .refs li{
 	list-style: none;
 }
-.form {
+
+#contact-form {
 	background-color: lightgray;
 	padding: 20px 0;
 	margin-top: 20px;
