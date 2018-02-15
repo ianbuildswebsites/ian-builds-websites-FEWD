@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="container">
@@ -43,70 +45,92 @@
 			</div>
 		</div>
 
-		<div class="jumbotron" id="custom" data-color="dark-blue">
+		<div class="jumbotron" id="custom" data-color="dark-grey">
 			<div class="flex-container-centered">
 				<h1 class="heading">
 					Custom Sites
 				</h1>
 			</div>
 			<div class="flex-container-centered">
-				<a href="https://ianmichaelminh.com" target="_blank"><img src="images/ian-michael-minh.png"></a>
-			</div>
-		</div>
+				
+				<div class="slider-container">
+					<div class="menu">
+						<label for="slide-dot-1"></label>
+						<label for="slide-dot-2"></label>
+						<label for="slide-dot-3"></label>
+					</div>
 
-		<div class="jumbotron" id="wordpress" data-color="dark-green">
-			<div class="flex-container-centered">
-				<h1 class="heading">
-					Wordpress Sites
-				</h1>
-			</div>
-			<div class="flex-container-centered">
-				<a href="https://placeholder.com"><img src="http://via.placeholder.com/1000x550"></a>
-			</div>
-		</div>
+					<input id="slide-dot-1" type="radio" name="slides" checked>
+					<div class="slide slide-1"></div>
 
-		<div class="jumbotron" id="qualifications" data-color="cream">
-			<div class="flex-container-centered">
-				<h1 class="heading">Qualifications</h1>
-			</div>
-			<div class="flex-container-centered copy">
-				<ul>
-					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem adipisci laborum, quis, non, officia ducimus quam vero voluptatum aperiam, praesentium commodi dicta suscipit excepturi aliquam totam. Laboriosam repellendus ullam quia?</li>
-					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, hic, sed temporibus nostrum repellat, porro architecto ipsa, saepe debitis alias dolorem ad deserunt doloribus necessitatibus labore mollitia? Rerum, non, veritatis.</li>
-					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sapiente delectus, illo provident. Totam quasi omnis, reiciendis voluptate, saepe ratione ipsam quae, nesciunt exercitationem iste tenetur nemo? Unde explicabo, quod.</li>
-					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, laboriosam, accusantium blanditiis illum maiores eveniet minima deleniti doloremque nemo minus sequi accusamus ipsum quia repellendus iusto. Aspernatur, laudantium. Harum, aut.</li>
-				</ul>
-			</div>
-		</div>
+					<input id="slide-dot-2" type="radio" name="slides">
+					<div class="slide slide-2"></div>
 
-		<div class="jumbotron" id="references" data-color="dark-grey">
-			<div class="flex-container-centered">
-				<h1 class="heading">References</h1>
-			</div>
-			<div class="flex-container-centered copy refs">
-				<ul>
-					<li>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos cupiditate ullam, ex nesciunt eaque similique ab commodi quis est corporis necessitatibus provident voluptas maiores maxime dolorem aliquam tempora ratione earum." <strong>-Carrie Fisher</strong></li>
-					<li>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat perspiciatis natus, earum laborum iusto blanditiis error adipisci dolor facere illo nemo ratione, laboriosam sint quibusdam praesentium, sequi excepturi nisi necessitatibus." <strong>-Harrison Ford</strong></li>
-					<li>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptas doloremque minus dolores asperiores veniam ea. Dignissimos qui, itaque reprehenderit. Quo, modi, sint! Exercitationem debitis inventore dolorum quo, accusantium nihil." <strong>-Brett Haymaker</strong></li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="jumbotron" id="contact">
-			<div class="flex-container-centered">
-				<h1 class="heading">Contact</h1>
-			</div>
-			<div class="flex-container-centered">
-				<a href="#contact" class="button button-2" id="holla">Holla At Me</a>
-			</div>
-			<div class="flex-container-centered" id="contact-form" >
-				<div class="contact-box">
-				<input label="Your Name" type="text" class="input-box" placeholder="Your Name" form="contact-page">
-				<input type="text" class="input-box" placeholder="How may I reach you?" form="contact-page">
-				<input type="text" class="input-box" placeholder="What are you looking for?" form="contact-page">
-				<div class="flex-container-centered">
-					<input type="submit" class="submit-btn button" value="Submit" form="contact-page">
+					<input id="slide-dot-3" type="radio" name="slides">
+					<div class="slide slide-3"></div>
 				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron" id="wordpress" data-color="dark-blue">
+		<div class="flex-container-centered">
+			<h1 class="heading">
+				Wordpress Sites
+			</h1>
+		</div>
+		<div class="flex-container-centered">
+
+			<a href="http://placeholder.com/"><img src="http://via.placeholder.com/1000x550" alt="a placeholder image"></a>
+
+		</div>
+	</div>
+
+	<div class="jumbotron" id="qualifications" data-color="dark-green">
+		<div class="flex-container-centered">
+			<h1 class="heading">Qualifications</h1>
+		</div>
+		<div class="flex-container-centered copy">
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem adipisci laborum, quis, non, officia ducimus quam vero voluptatum aperiam, praesentium commodi dicta suscipit excepturi aliquam totam. Laboriosam repellendus ullam quia?</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, hic, sed temporibus nostrum repellat, porro architecto ipsa, saepe debitis alias dolorem ad deserunt doloribus necessitatibus labore mollitia? Rerum, non, veritatis.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sapiente delectus, illo provident. Totam quasi omnis, reiciendis voluptate, saepe ratione ipsam quae, nesciunt exercitationem iste tenetur nemo? Unde explicabo, quod.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, laboriosam, accusantium blanditiis illum maiores eveniet minima deleniti doloremque nemo minus sequi accusamus ipsum quia repellendus iusto. Aspernatur, laudantium. Harum, aut.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="jumbotron" id="references" data-color="dark-grey">
+		<div class="flex-container-centered">
+			<h1 class="heading">References</h1>
+		</div>
+		<div class="flex-container-centered copy refs">
+			<ul>
+				<li>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos cupiditate ullam, ex nesciunt eaque similique ab commodi quis est corporis necessitatibus provident voluptas maiores maxime dolorem aliquam tempora ratione earum." <strong>-Carrie Fisher</strong></li>
+				<li>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat perspiciatis natus, earum laborum iusto blanditiis error adipisci dolor facere illo nemo ratione, laboriosam sint quibusdam praesentium, sequi excepturi nisi necessitatibus." <strong>-Harrison Ford</strong></li>
+				<li>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptas doloremque minus dolores asperiores veniam ea. Dignissimos qui, itaque reprehenderit. Quo, modi, sint! Exercitationem debitis inventore dolorum quo, accusantium nihil." <strong>-Brett Haymaker</strong></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="jumbotron" id="contact">
+		<div class="flex-container-centered">
+			<h1 class="heading">Contact</h1>
+		</div>
+		<div class="flex-container-centered">
+			<a href="#contact" class="button button-2" id="holla">Holla At Me</a>
+		</div>
+		<div class="flex-container-centered" id="contact-form" >
+			<div class="contact-box">
+				<form action="">
+					<input label="Your Name" type="text" class="input-box" placeholder="Your Name" form="contact-page">
+					<input type="email" class="input-box" placeholder="How may I reach you?" form="contact-page">
+					﻿﻿<textarea name="" class="input-box" placeholder="What are you looking for?" form="contact-page" style="margin-top: 20px; width: 100%; height: 100px;"></textarea>
+					<div class="flex-container-centered">
+						<input type="submit" class="submit-btn button" value="Submit" form="contact-page">
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -114,7 +138,7 @@
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 <script src="js/main.js"></script>
 

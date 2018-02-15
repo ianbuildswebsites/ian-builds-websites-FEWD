@@ -53,7 +53,7 @@ $('a[href*="#"]')
       $panel	 = $('.jumbotron');
   
   // Change 33% earlier than scroll position so colour is there when you arrive.
-  var scroll = $window.scrollTop() + ($window.height() / 3);
+  var scroll = $window.scrollTop() + ($window.height() / 2);
  
   $panel.each(function () {
     var $this = $(this);
