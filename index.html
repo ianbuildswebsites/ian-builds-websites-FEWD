@@ -132,11 +132,11 @@
 		<div class="flex-container-centered" id="contact-form" >
 			<div class="contact-box">
 				<form name="contact" method="POST" action="/index.html" netlify>
-					<input label="Your Name" type="text" class="input-box" placeholder="Your Name" form="contact-page">
-					<input type="text" class="input-box" placeholder="How may I reach you?" form="contact-page">
-					﻿﻿<textarea name="" class="input-box" placeholder="What are you looking for?" form="contact-page" style="margin-top: 20px; width: 100%; height: 100px;"></textarea>
+					<input label="Your Name" name="name" type="text" class="input-box" placeholder="Your Name">
+					<input type="text" name="method" class="input-box" placeholder="How may I reach you?">
+					﻿﻿<textarea name="message" class="input-box" placeholder="What are you looking for?" style="margin-top: 20px; width: 100%; height: 100px;"></textarea>
 					<div class="flex-container-centered">
-						<input type="submit" class="submit-btn button" value="Submit" form="contact-page">
+						<button type="submit" class="submit-btn button" form="contact-page">Submit</button>
 					</div>
 				</form>
 			</div>
