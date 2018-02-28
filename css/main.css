@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto Slab', serif;
+	-webkit-transition: background-color 1s ease;
 	transition: background-color 1s ease;
 }
 
@@ -20,6 +21,7 @@ nav {
 	top: 0;
 	left: 0;
 	overflow-x: hidden; /* Disable horizontal scroll */
+	-webkit-transition: 0.5s;
 	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 	margin-top: 20px;
 	border-radius: 0px 15px 15px 0px;
@@ -63,14 +65,25 @@ nav .closebtn {
 }
 
 .flex-container-centered {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .button-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	height: 500px;
 }
 
@@ -78,9 +91,15 @@ nav .closebtn {
 	height: 45px;
 	width: 120px;
 	border: 2px solid black;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	border-radius: 5px;
 	margin-top: 10px;
 }
@@ -90,25 +109,31 @@ nav .closebtn {
 	color: black;
 }
 
+
+
 .button-2 {
 	background-color: #e71313;
 	color: #f9f9f9;;
 }
 
-.color-dark-blue {
-	background-color: #00006be6;
+.color-dark-teal {
+	background-color: #11455c;
 }
 
-.color-dark-green {
-	background-color: #002b75cc;
+.color-blue {
+	background-color: #234674;
 }
 
-.color-dark-grey {
-	background-color: #777;
+.color-teal {
+	background-color: #10A8A6;
 }
 
-.color-cream {
-	background-color: #FCFBE3;
+.color-purple {
+	background-color: #542681;
+}
+
+.color-light-purple {
+	background-color: #8B67A8;
 }
 
 .copy {
@@ -167,35 +192,6 @@ nav .closebtn {
   }
 }
 
-.slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: 10;
-  padding: 8em 1em 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  transition: left 0s .75s;
-}
-
-[id^="slide"]:checked + .slide {
-  left: 0;
-  z-index: 100;
-  transition: left .65s ease-out;
-}
-
-.slide-1 {
-  background-image: url("../images/ian-michael-minh.png");
-}
-.slide-2 {
-  background-image: url("http://via.placeholder.com/1000x550");
-}
-.slide-3 {
-  background-image: url("http://via.placeholder.com/1000x550");
-}
-
 
 input {
 	width: 100%;
@@ -221,7 +217,9 @@ input:hover {
 
 	.button-container {
 		height: auto;
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 
 	h1 {

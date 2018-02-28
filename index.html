@@ -11,7 +11,10 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="sss/sss.min.js"></script>
+	<link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+	<script>jQuery(function($) {$('.slider').sss();});</script>
 </head>
 <body>
 	<div class="container">
@@ -45,49 +48,51 @@
 			</div>
 		</div>
 
-		<div class="jumbotron" id="custom" data-color="dark-grey">
+		<div class="jumbotron" id="custom" data-color="teal">
 			<div class="flex-container-centered">
 				<h1 class="heading">
 					Custom Sites
 				</h1>
 			</div>
-			<div class="flex-container-centered">
-				
-				<div class="slider-container">
-					<div class="menu">
-						<label for="slide-dot-1"></label>
-						<label for="slide-dot-2"></label>
-						<label for="slide-dot-3"></label>
-					</div>
 
-					<input id="slide-dot-1" type="radio" name="slides" checked>
-					<div class="slide slide-1"></div>
+			<div class="slider">
 
-					<input id="slide-dot-2" type="radio" name="slides">
-					<div class="slide slide-2"></div>
+				<img src="./images/ian-michael-minh.png" alt="an actor's website">
 
-					<input id="slide-dot-3" type="radio" name="slides">
-					<div class="slide slide-3"></div>
-				</div>
+				<img src="http://via.placeholder.com/1000x550" alt="a placeholder image">
+
+				<img src="http://via.placeholder.com/1000x552" alt="a placeholder image">
 
 			</div>
+
+			
 		</div>
 	</div>
 
-	<div class="jumbotron" id="wordpress" data-color="dark-blue">
+	<div class="jumbotron" id="wordpress" data-color="dark-teal">
 		<div class="flex-container-centered">
 			<h1 class="heading">
 				Wordpress Sites
 			</h1>
 		</div>
-		<div class="flex-container-centered">
+		
+		<div class="slider">
 
-			<a href="http://placeholder.com/"><img src="http://via.placeholder.com/1000x550" alt="a placeholder image"></a>
+			<img src="http://via.placeholder.com/1000x550" alt="a placeholder image">
+
+			<img src="http://via.placeholder.com/1000x551" alt="a placeholder image">
+
+			<img src="http://via.placeholder.com/1000x552" alt="a placeholder image">
 
 		</div>
+		
+
+
+
+		
 	</div>
 
-	<div class="jumbotron" id="qualifications" data-color="dark-green">
+	<div class="jumbotron" id="qualifications" data-color="blue">
 		<div class="flex-container-centered">
 			<h1 class="heading">Qualifications</h1>
 		</div>
@@ -101,7 +106,7 @@
 		</div>
 	</div>
 
-	<div class="jumbotron" id="references" data-color="dark-grey">
+	<div class="jumbotron" id="references" data-color="purple">
 		<div class="flex-container-centered">
 			<h1 class="heading">References</h1>
 		</div>
@@ -114,7 +119,7 @@
 		</div>
 	</div>
 
-	<div class="jumbotron" id="contact">
+	<div class="jumbotron" id="contact" data-color="light-purple">
 		<div class="flex-container-centered">
 			<h1 class="heading">Contact</h1>
 		</div>
