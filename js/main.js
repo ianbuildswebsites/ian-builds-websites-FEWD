@@ -75,15 +75,4 @@ $('a[href*="#"]')
   
 }).scroll();
 
-  //hide the contact form
-  $('#contact-form').hide();
 
-  //listen for click on Holla At Me button
-  $ ('#holla').click(showForm);
-
-  function showForm (event) {
-  	//clear any value in the form
-  	$ ('.input-box').val('');
-  	//slide it down
-	$ ('#contact-form').slideDown();
-}
