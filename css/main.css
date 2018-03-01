@@ -109,31 +109,29 @@ nav .closebtn {
 	color: black;
 }
 
-
-
 .button-2 {
 	background-color: #e71313;
 	color: #f9f9f9;;
 }
 
-.color-dark-teal {
-	background-color: #11455c;
+.color-custom {
+	background-color: #a3bcf9  ;
 }
 
-.color-blue {
-	background-color: #234674;
+.color-wordpress {
+	background-color: #95abe3;
 }
 
-.color-teal {
-	background-color: #10A8A6;
+.color-quals {
+	background-color: #7796cb;
 }
 
-.color-purple {
-	background-color: #542681;
+.color-refs {
+	background-color: #576490;
 }
 
-.color-light-purple {
-	background-color: #8B67A8;
+.color-contact {
+	background-color: #c9cad9;
 }
 
 .copy {
