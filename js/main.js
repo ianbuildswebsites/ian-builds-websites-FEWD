@@ -71,6 +71,7 @@ $('a[href*="#"]')
       // Add class of currently active div
       $body.addClass('color-' + $(this).data('color'));
     }
+
   });    
   
 }).scroll();
@@ -87,3 +88,18 @@ $('a[href*="#"]')
   	//slide it down
 	$ ('#contact-form').slideDown();
 }
+
+//if the viewport is narrower than 650px, change the slideshow to a gallery
+
+function removeSlides(x) {
+    if (x.matches) { // If media query matches
+        var cslideshow = document.getElementById("cslides");
+        var wpslideshow = document.getElementById("wpslides");
+
+        cslideshow.classList.remove("slider");
+        wpslideshow.classList.remove("slider");
+    }
+}
+
+var x = window.matchMedia("(max-width: 650px)")
+removeSlides(x) // Call listener function at run time

@@ -142,16 +142,32 @@ nav .closebtn {
 	margin: 18px 0;
 }
 
+.qualcopy {
+	background-color: #c9cad9;
+	border-radius: 10px;
+	justify-content: left;
+}
+
 #references {
 	color:white;
 }
 
-.refs li{
-	list-style: none;
+.refs {
+	background-color: #282e42;
+	border-radius: 10px;
+	justify-content: left;
+	margin-bottom: 30px;
+	padding: 5px 35px;
+	font-family: Source Sans Pro, helvetica, sans-serif;
+	font-weight: 600;
+}
+
+.refs span {
+	font-weight: 400;
+	font-style: italic;
 }
 
 #contact-form {
-	background-color: lightgray;
 	padding: 20px 0;
 	margin-top: 20px;
 }
