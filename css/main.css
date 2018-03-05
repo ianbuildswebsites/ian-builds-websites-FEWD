@@ -4,9 +4,6 @@ body {
 	transition: background-color 1s ease;
 }
 
-.container {
-}
-
 #top {
 	height:150px;
 }
@@ -25,7 +22,10 @@ nav {
 	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 	margin-top: 20px;
 	border-radius: 0px 15px 15px 0px;
+}
 
+ul, nav {
+	font-family: Source Sans Pro, helvetica, sans-serif;
 }
 
 a {
@@ -69,8 +69,8 @@ nav .closebtn {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .button-container {
@@ -79,11 +79,11 @@ nav .closebtn {
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	    -ms-flex-flow: row nowrap;
-	        flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	height: 500px;
 }
 
@@ -95,11 +95,11 @@ nav .closebtn {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	border-radius: 5px;
 	margin-top: 10px;
 }
@@ -162,32 +162,32 @@ nav .closebtn {
 
 
 .slider-container{
-  height: 550px;
-  width: 1000px;
-  position: relative;
-  overflow: hidden; 
-  text-align: center;
+	height: 550px;
+	width: 1000px;
+	position: relative;
+	overflow: hidden; 
+	text-align: center;
 }
 
 .menu {
-  position: absolute;
-  left: 0;
-  z-index: 900;
-  width: 100%;
-  bottom: 0;
+	position: absolute;
+	left: 0;
+	z-index: 900;
+	width: 100%;
+	bottom: 0;
 }
 
 .menu label {
-  cursor: pointer;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background: #fff;
-  border-radius: 50px;
-  margin: 0 .2em 1em;
-  &:hover {
-    background: red;
-  }
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: #fff;
+	border-radius: 50px;
+	margin: 0 .2em 1em;
+	&:hover {
+		background: red;
+	}
 }
 
 
@@ -204,7 +204,13 @@ input:hover {
 	border: 2px solid #999999;
 }
 
-@media screen and (max-width: 420px) {
+footer p {
+	position: fixed;
+	margin-left: 20px;
+	bottom: 5px;
+}
+
+@media screen and (max-width: 650px) {
 	.hamburger {
 		font-size: 25px;
 	}
@@ -216,11 +222,16 @@ input:hover {
 	.button-container {
 		height: auto;
 		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
 	}
 
 	h1 {
 		font-size: 1.5em;
+	}
+
+	ul {
+		font-size: .85em;
+		margin-right: 18px;
 	}
 }
